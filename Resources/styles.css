@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #28282b;
+  background-color: white;
+  height: auto;
+  text-align: center;
+  margin-left: 0px;
+}
+
+button {
+  background-color: coral;
+  color: #ffffff;
+  border: solid white 1px;
+  margin-left: 1em;
+  font-weight: bold;
+  border-radius: 20px;
+}
+button:hover {
+  background-color: #ff6342;
+}
+h1 {
+  font-size: 6vh;
+  margin-bottom: 0.5em;
+
+
+  
+}
+em{
+  font-style: normal;
+  color: coral;
+}
+p {
+  color: #36454f;
+}
+a{
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.ButtonAnchor{
+  text-decoration: none;
+  
+  color: white;
+}
+#NavBar {
+
+  height: 5vh;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-bottom: 1em;
+
+  
+  border-bottom: solid lightgray 1px;
+}
+#NavBar_Left a {
+  font-weight: bold;
+  text-decoration: none;
+  color: coral;
+  font-size: 4vh;
+}
+#NavBar_Center {
+  padding-top: 0.5em;
+}
+#NavBar_Center a {
+  font-size: 2vh;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding-bottom: 5px;
+  color: inherit;
+  margin-right: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+#NavBar_Center a:hover {
+  color: coral;
+}
+#NavBar_Right{
+  font-size: 1.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#NavBar_Right button {
+  border-radius: 16px;
+  font-size: 1em;
+  padding: 14px 24px;
+}
+
+
+#MainContent {
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5em;
+  padding-left: 20vh;
+  padding-right: 20vh;
+  border-bottom: solid 1px lightgray;
+  
+}
+#CTA{
+  margin-right: 20vh;
+  text-align: left;
+}
+
+#MainContent p {
+  font-size: 2vh;
+}
+
+#GetStarted {
+  margin-left: 0em;
+  border-radius: 20px;
+  font-size: 4vh;
+  font-weight: bold;
+  padding: 24px 48px;
+}
+
+#Img1 {
+  height: 70%;
+  width: 50%;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1);
+  margin-right: 3em;
+}
+
+#AccountSelect{
+ text-align: center;
+ width: auto;
+ height: 90vh;
+ font-size: 2vh;
+}
+
+
+
+.Account {
+  width: 80%;
+  height: 20%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  border: solid lightgray 2px;
+  align-items: center;
+  margin: 1em auto;
+  padding: 1em;
+}
+.AccDesc h2{
+  font-size: 4vh;
+}
+.AccDesc {
+  font-size: 2vh;
+  flex: 1;
+  margin-right: 1em;
+}
+.AccPic {
+  height: 15vh;
+  width: 15vh;
+
+}
+
+
+#NotClicked{
+  color: red;
+  visibility: hidden;
+}
+
+#StockDesc{
+  display: flex;
+  justify-content: space-between;
+    margin: 2em;
+  height: 100vh;
+}
+#CompanyInfo{
+  text-align: left;
+  width: 50%;
+}
+table {
+  border-collapse: collapse;
+  width: 50%;
+  font-size: 1vh;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  font-weight: bold;
+}
+#stocks{
+  display: flex;
+  position: relative;
+  
+}
+#SideBar {
+  position: fixed;
+  width: 20%;
+  height: 100vh;
+  background-color: #28282b;
+  color: white;
+}
+
+#SideBar ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+#SideBar li {
+  height: 20%;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-size: 1.5em;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+}
+
+#SideBar li:hover {
+  background-color: coral;
+  color: #28282b;
+}
+.active {
+  background-color: coral;
+  color: #28282b;
+}
+#stocks ul {
+  list-style: none;
+
+}
+#Data {
+  width: 80%;
+  margin-left: 20%;
+  height: 100vh;
+  background-color: #f5f5f5;
+  padding: 1em;
+}
+#ChartWrapper {
+
+  width: 100%; 
+  height: 70%; 
+}
+
+#chartStuff {
+  display: block;
+  width: 500px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.NavBar_Right input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 10vh;
+}
+
+@media screen and (max-width: 600px) {
+   .NavBar_Right input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  
+  .NavBar_Right input[type=text] {
+    border: 1px solid #ccc;
+    border-radius: 6px;  
+  }
+}
+
+
+#StockSelect {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+input[type="submit"] {
+  background-color: coral;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff6342;
+}
+
+.options-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  position: relative;
+}
+
+.stock-recommendations,
+.thematic-portfolios {
+  padding: 20px;
+  width: 45%;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.separator {
+  align-items: center; 
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, -100%);
+  width: 50px;
+  height: 50px;
+
+}
+
+
+

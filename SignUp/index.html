@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../Resources/styles.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../Scripts/SignUp.js"></script>
+</head>
+<body>
+    <header>
+      <nav id="NavBar">
+        <div id="NavBar_Left">
+          <a href = "../index.html">MarketFi</a>
+          </div>
+          <div id="NavBar_Right">
+          <p>Already have an account?</p>
+          <button id="SignOn" ><a href = "SignUp/index.html" class = "ButtonAnchor">Sign in</a></button>
+          </div>
+      </nav>
+    </header>
+
+    <main id = "AccountSelect">
+      <h1>Welcome to <em>MarketFi</em></h1>
+      <p>Please select your account type below</p>
+      <div class = "Account" id = "New">
+        <div class = "AccDesc">
+          <h2>Inexperienced Trader</h2>
+          <p>
+            For Individuals who want to learn the ins and outs of trading before making
+            large investments. Paper Trading options are available to new users as well as
+            a plethora of learning materials.
+          </p>
+        </div>
+        <img src = "../Resources/images/computer.svg" alt = "Computer" class = "AccPic" >
+      </div>
+
+      <div class = "Account" id = "Experienced">
+        <div class = "AccDesc"> 
+          <h2>Experienced Trader</h2>
+            <p>
+              For Individuals who already have a good understanding of the stock market. 
+              Experienced users have access to the same learning tools that inexperienced users do,
+              but also have access to our advanced trading tools and higher trading limits.
+            </p>
+        </div>
+        <img src = "../Resources/images/bank.svg" alt = "Computer" class = "AccPic" \>
+      </div>
+      <button id="GetStarted" >Continue</button>
+      <div id = "NotClicked">*Please Select an Account Type</div>
+      </div>
+        
+    </main>
+</body>
+</html>

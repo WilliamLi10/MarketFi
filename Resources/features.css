@@ -1,0 +1,41 @@
+
+#FeatureHeader{
+    height: 10vh;
+
+}
+#Features{
+  height: 100vh;
+}
+
+#Features_Container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1em;
+  padding: 2rem;
+  height: 40vh;
+  padding-bottom: 20vh;
+}
+
+.feature-card {
+  background-color: rgb(235,235,235);
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 1.5rem;
+  color:black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.feature-card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+footer {
+  background-color: coral;
+  height: 10vh;
+}
+
+.info-card a {
+  color: coral;
+}

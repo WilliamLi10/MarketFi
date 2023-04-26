@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Display</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="../Scripts/display.js"></script>
+    <link rel="stylesheet" href="../Resources/extra.css" />
+    <link rel="stylesheet" href="../Resources/styles.css" />
+  </head>
+  <body>
+    <nav id="NavBar">
+      <div id="NavBar_Left">
+        <a href="../index.html">MarketFi</a>
+      </div>
+      <div id="NavBar_Center">
+        <a>About</a>
+        <a href="../MarketNews/index.php">News</a>
+        <a href = "../index.html#Features">Features</a>
+        <a>Resources</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Pricing</a>
+        <a href = "../Learn/learn.html">Learn</a>
+
+      </div>
+      <div id="NavBar_Right">
+        <form action="StockLookup/StockLookup.php" method="post">
+          <input type="text" name="stockLookup" placeholder="Search.." />
+        </form>
+      </div>
+    </nav>
+    <div id="stocks">
+      <section id="SideBar">
+        <ul></ul>
+      </section>
+      <section id="Data">
+        <div id="ChartWrapper">
+          <canvas id="chartStuff"></canvas>
+        </div>
+        <div id = "TableWrapper">
+          <table id = "myTable">
+            <thead>
+              <tr>
+                <th class = "disHead">Stock</th>
+                <th class = "disHead">Open (Average)</th>
+                <th class = "disHead">Highest (Average)</th>
+                <th class = "disHead">Lowest (Average)</th>
+                <th class = "disHead">Closing (Average)</th>
+                <th class = "disHead">Volume</th>
+                <th class = "disHead">Stock Held</th>
+                <th class = "disHead">Estimated Value</th>
+                <th class = "disHead">Buy/Sell</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class = "disEle"  id="Name"></td>
+                <td class = "disEle"  id="Open"></td>
+                <td class = "disEle"  id="High"></td>
+                <td class = "disEle"  id="Low"></td>
+                <td class = "disEle"  id="Close"></td>
+                <td class = "disEle"  id="Vol"></td>
+                <td class = "disEle"  id="Num"></td>
+                <td class = "disEle"  id="CalcNum"></td>
+                <td class = "disEle"><input type="number"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

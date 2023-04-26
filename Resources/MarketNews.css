@@ -1,0 +1,65 @@
+#MarketNews {
+    background-color: #f4f4f4;
+    padding-top: 5vh;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .NewsItem {
+    width: 80%;
+    background-color: white;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    align-items: flex-start;
+    margin: 1em auto;
+    padding: 1em;
+  }
+  
+  .NewsDesc h2 {
+    color: #28282b;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .NewsDesc {
+    font-size: 1em;
+    flex: 2;
+    margin-right: 1em;
+    color: lightgray;
+  }
+  
+  .NewsURL {
+    color: coral;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 0.5em;
+    display: inline-block;
+  }
+  
+  .NewsURL:hover {
+    color: #ff6342;
+  }
+  
+  .NewsPic {
+    width: 30%;
+    height: auto;
+    border-radius: 6px;
+    margin-left: 1em;
+    flex: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .NewsItem {
+      flex-direction: column;
+    }
+  
+    .NewsPic {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 1em;
+    }
+  }

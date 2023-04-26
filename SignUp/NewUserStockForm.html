@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../Resources/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="NavBar">
+        <div id="NavBar_Left">
+          <a href="../index.html">MarketFi</a>
+        </div>
+        <div id="NavBar_Center">
+          <a>About</a>
+          <a href="index.php">News</a>
+          <a href="../index.html#Features">Features</a>
+          <a>Resources</a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Pricing</a>
+          <a>Learn</a>
+        </div>
+        <div id="NavBar_Right">
+          <a>Sign in</a>
+          <button id="SignOn">
+            <a href="../SignUp/index.html" class="ButtonAnchor">Sign Up</a>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="StockSelect">
+      <h2>Create your <em>Portfolio</em></h2>
+      <form action="../UserInfo/NewUser.php" method="post">
+        <div class="options-container">
+          <div class="stock-recommendations">
+            <p>Here are some popular stock options right now:</p>
+            <input
+              class="stockSelect"
+              type="checkbox"
+              name="stockName[]"
+              value="AMZN"
+            />Amazon<br />
+            <input
+              class="stockSelect"
+              type="checkbox"
+              name="stockName[]"
+              value="ETSY"
+            />Etsy<br />
+            <input
+              class="stockSelect"
+              type="checkbox"
+              name="stockName[]"
+              value="PINS"
+            />Pinterest<br />
+            <input
+              class="stockSelect"
+              type="checkbox"
+              name="stockName[]"
+              value="O"
+            />Realty Income<br />
+            <input
+              class="stockSelect"
+              type="checkbox"
+              name="stockName[]"
+              value="SQ"
+            />Block<br />
+          </div>
+          <div class="separator">
+            <p>or</p>
+          </div>
+          <div class="thematic-portfolios">
+            <p>Choose One of Our Thematic Portfolios</p>
+            <input
+              class="portfolioSelect"
+              type="checkbox"
+              name="portfolioName[]"
+              value="greenTech"
+            />Green Tech<br />
+            <input
+              class="portfolioSelect"
+              type="checkbox"
+              name="portfolioName[]"
+              value="highDividend"
+            />High Dividend<br />
+            <input
+              class="portfolioSelect"
+              type="checkbox"
+              name="portfolioName[]"
+              value="techGrowth"
+            />Tech Growth<br />
+            <input
+              class="portfolioSelect"
+              type="checkbox"
+              name="portfolioName[]"
+              value="healthcareInnovation"
+            />Healthcare Innovation<br />
+          </div>
+        </div>
+        <input
+        class="stockSelect"
+        type="submit"
+        name="formSubmit"
+        value="Submit"
+      />
+      </form>
+    </main>
+  </body>
+</html>
